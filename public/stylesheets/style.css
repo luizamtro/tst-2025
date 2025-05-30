@@ -1,0 +1,200 @@
+/* -------------------------------- Navbar -------------------------------- */
+.navbar {
+  background-color: #000000 !important;
+}
+
+.navbar .navbar-brand,
+.nome-deboa {
+  color: #ffffff;
+}
+
+.nome-deboa {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* Links Of */
+.nav-link {
+  color: #c2c1c1 !important;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #aaaaaa !important;
+  text-decoration: none;
+}
+
+/* Link On */
+.ativo-link {
+  color: #000000 !important;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/* -------------------------------- Corpo Geral -------------------------------- */
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Julius Sans One', sans-serif;
+  background-color: #f7f7f7;
+  color: #000;
+  padding-top: 80px;
+}
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+}
+
+
+/* -------------------------------- Carrossel -------------------------------- */
+.carousel-item img {
+  width: 1400px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.blur-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.158);
+  z-index: 2;
+}
+
+/* -------------------------------- Imagens -------------------------------- */
+.imagem-grande {
+  max-width: 100%;
+  width: 450px;
+  height: auto;
+}
+
+.logo-dbv {
+  width: 100px;
+  height: auto;
+}
+
+.logo-footer {
+  width: 50px;
+  height: auto;
+}
+
+.card {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* -------------------------------- Botões -------------------------------- */
+.btn-dark {
+  background-color: #757e45 !important;
+  border-color: #757e45 !important;
+  color: #ffffff;
+}
+
+.btn-dark:hover {
+  background-color: #4f552e !important;
+  border-color: #4f552e !important;
+}
+
+/* -------------------------------- Footer -------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1; /* Permite que o main cresça e empurre o footer para o fim */
+  padding: 20px;
+}
+
+footer.footer {
+  background-color: #757e45;
+  color: #fff;
+  padding: 40px 0 20px;
+  margin-top: 250px;
+}
+
+footer.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer h5 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #f0a500;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+}
+
+
+/* Rodapé inferior */
+.footer-bottom {
+  text-align: center; /* Centraliza o texto */
+  border-top: 1px solid #cec7c7; /* Borda superior */
+  padding: 15px 20px 0; /* Espaçamento interno */
+  font-size: 13px; /* Tamanho da fonte */
+  color: #999; /* Cor do texto */
+  margin-top: 20px; /* Margem superior */
+}
+
+/* -------------------------------- Responsivo -------------------------------- */
+@media (max-width: 768px) {
+  .footer .container {
+    flex-direction: column; /* Colunas em coluna */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  .footer-logo img {
+    max-width: 120px; /* Largura máxima da imagem do logo em telas menores */
+  }
+}
