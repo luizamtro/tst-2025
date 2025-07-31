@@ -14,7 +14,6 @@
   letter-spacing: 1px;
 }
 
-/* Links Of */
 .nav-link {
   color: #c2c1c1 !important;
   font-weight: bold;
@@ -25,7 +24,6 @@
   text-decoration: none;
 }
 
-/* Link On */
 .ativo-link {
   color: #000000 !important;
   font-weight: bold;
@@ -79,6 +77,7 @@ body {
   z-index: 2;
 }
 
+
 /* -------------------------------- Imagens -------------------------------- */
 .imagem-grande {
   max-width: 100%;
@@ -100,6 +99,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+
 /* -------------------------------- Botões -------------------------------- */
 .btn-dark {
   background-color: #757e45 !important;
@@ -112,15 +112,10 @@ body {
   border-color: #4f552e !important;
 }
 
-/* -------------------------------- Footer -------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
+/* -------------------------------- Footer -------------------------------- */
 main {
-  flex: 1; /* Permite que o main cresça e empurre o footer para o fim */
+  flex: 1;
   padding: 20px;
 }
 
@@ -176,48 +171,50 @@ footer.footer .container {
   display: block;
 }
 
-
-/* Rodapé inferior */
 .footer-bottom {
-  text-align: center; /* Centraliza o texto */
-  border-top: 1px solid #cec7c7; /* Borda superior */
-  padding: 15px 20px 0; /* Espaçamento interno */
-  font-size: 13px; /* Tamanho da fonte */
-  color: #999; /* Cor do texto */
-  margin-top: 20px; /* Margem superior */
+  text-align: center;
+  border-top: 1px solid #cec7c7;
+  padding: 15px 20px 0;
+  font-size: 13px;
+  color: #999;
+  margin-top: 20px;
 }
+
 
 /* -------------------------------- Responsivo -------------------------------- */
 @media (max-width: 768px) {
   .footer .container {
-    flex-direction: column; /* Colunas em coluna */
-    align-items: center; /* Centraliza os itens */
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-logo img {
-    max-width: 120px; /* Largura máxima da imagem do logo em telas menores */
+    max-width: 120px;
   }
 }
 
+
+/* -------------------------------- Cards Personalizados -------------------------------- */
 .card-custom {
-  background-color: #fff; /* branco */
-  color: #000; /* texto preto */
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  color: #000;
   min-height: 420px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
 }
 
 .card-custom .valor {
   font-weight: 700;
-  color: #555; /* cinza escuro */
+  color: #555;
 }
 
 .comentario textarea {
   resize: none;
 }
 
-/* Estilo das estrelas */
 
+/* -------------------------------- Estrelas Avaliação -------------------------------- */
 .stars {
   direction: rtl;
   display: inline-flex;
@@ -229,14 +226,40 @@ footer.footer .container {
 }
 
 .stars label {
-  color: #ccc;
+  color: #c7c5c5;
   cursor: pointer;
-  transition: color 0.2s;
-  user-select: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
 }
 
 .stars input[type="radio"]:checked ~ label,
 .stars label:hover,
 .stars label:hover ~ label {
-  color: #ffc107; /* amarelo bootstrap */
+  color: #f0ce44;
+}
+
+
+/* -------------------------------- Avaliações Postadas -------------------------------- */
+.avaliacao-postada {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.3);
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+}
+
+.avaliacao-postada .star {
+  color: #c7c5c5;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  user-select: none;
+  margin-right: 2px;
+}
+
+.avaliacao-postada .star.checked {
+  color: #f0ce44;
 }
