@@ -198,3 +198,45 @@ footer.footer .container {
     max-width: 120px; /* Largura máxima da imagem do logo em telas menores */
   }
 }
+
+.card-custom {
+  background-color: #fff; /* branco */
+  color: #000; /* texto preto */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  min-height: 420px;
+}
+
+.card-custom .valor {
+  font-weight: 700;
+  color: #555; /* cinza escuro */
+}
+
+.comentario textarea {
+  resize: none;
+}
+
+/* Estilo das estrelas */
+
+.stars {
+  direction: rtl;
+  display: inline-flex;
+  font-size: 1.5rem;
+}
+
+.stars input[type="radio"] {
+  display: none;
+}
+
+.stars label {
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+  user-select: none;
+}
+
+.stars input[type="radio"]:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+  color: #ffc107; /* amarelo bootstrap */
+}
